@@ -2,7 +2,8 @@
 > 因为给原生小程序配置tailwind css实在是太麻烦了（还有很多问题，于是按照Tailwind默认配置复制成小程序能用的
 
 ## 介绍
-Tailwind小程序提取代码来源于[TailwindCssForWechatMiniProgarm](https://github.com/pialin/TailwindCssForWechatMiniProgarm) 
+Tailwind小程序提取代码来源于[TailwindCssForWechatMiniProgarm](https://github.com/pialin/TailwindCssForWechatMiniProgarm)  
+感谢大佬的提取
 
 ### 根据小程序的WXSS修改的TailwindCSS
 1. 基于TailwindCSS 2.0.1版本
@@ -17,3 +18,5 @@ Tailwind小程序提取代码来源于[TailwindCssForWechatMiniProgarm](https://
 1. 直接将`tailwind.min.wxss`引入到app.wxss便可生效
 2. `tailwind.css`是比较完整的复制版，可以根据需要进行修改
 3. `tailwind.wxss`是删减后的完整版，未压缩
+4. 因为使用中有很多用不到的代码，可根据自身需要进行删减
+5. 如果要新增样式，建议在app.wxss中进行修改
