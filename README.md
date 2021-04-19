@@ -1,8 +1,8 @@
 # Tailwind CSS for WeChatApp
-> 因为给原生小程序配置tailwind css实在是太麻烦了（还有很多问题，于是按照Tailwind默认配置复制成小程序能用的
+> 不会给原生小程序配置Tailwind，所以干脆自己提取一个（技术太菜了
 
 ## 介绍
-Tailwind小程序提取代码来源于[TailwindCssForWechatMiniProgarm](https://github.com/pialin/TailwindCssForWechatMiniProgarm)  
+Tailwind小程序提取代码来源于[TailwindCssForWechatMiniProgarm](https://github.com/pialin/TailwindCssForWechatMiniProgarm)，自己做一个精简  
 感谢大佬的提取
 
 ### 根据小程序的WXSS修改的TailwindCSS
