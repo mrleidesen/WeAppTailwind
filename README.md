@@ -7,8 +7,12 @@ Tailwind小程序提取代码来源于[TailwindCssForWechatMiniProgarm](https://
 
 ## 精简
 * `tailwind.css`中精简了小程序中用不到的样式，删去了注释，保留其他全部内容（方便自己定制）
-* `tailwind.wxss`中精简了我个人使用中不常用的样式（渐变、带负数的样式），如需定制，可以在`tailwind.css`中修改
-* `tailwind.min.wxss`则是压缩成一行后的代码（尽力精简到**110KB**左右了）
+* `tailwind.wxss`中精简了我个人使用中不常用的样式（渐变、带负数的样式），如需定制，可以在`tailwind.css`中修改，或者在`app.wxss`中自行添加定制化
+  * 带负数的样式
+  * 带小数点的样式
+  * 不常使用，定制化比较高的样式（比如order）
+  * cursor
+* `tailwind.min.wxss`则是压缩成一行后的代码（尽力精简到**100KB**左右了）
 
 ### 根据小程序的WXSS修改的TailwindCSS
 1. 基于TailwindCSS 2.0.1版本
@@ -20,8 +24,8 @@ Tailwind小程序提取代码来源于[TailwindCssForWechatMiniProgarm](https://
    2. 斜杆： 比如 `1/2=> 1on2;`
 
 ### 用法
-1. 直接将`tailwind.min.wxss`引入到app.wxss便可生效
+1. 直接将`tailwind.min.wxss`引入到`app.wxss`便可生效
 2. `tailwind.css`是比较完整的复制版，可以根据需要进行修改
 3. `tailwind.wxss`是删减后的完整版，未压缩
 4. 因为使用中有很多用不到的代码，可根据自身需要进行删减
-5. 如果要新增样式，建议在app.wxss中进行修改
+5. 如果要新增样式，建议在`app.wxss`中进行修改
