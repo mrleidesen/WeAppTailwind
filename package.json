@@ -1,0 +1,20 @@
+{
+  "name": "weapptailwind",
+  "version": "2.0.0",
+  "description": "给微信小程序使用的Tailwind CSS提取版 - Tailwind CSS for WeChat APP(Mini Program",
+  "scripts": {
+    "build": "tailwindcss -o ./dist/tailwind.css"
+  },
+  "repository": {
+    "url": "https://github.com/mrleidesen/WeAppTailWind"
+  },
+  "author": "MrLeiDeSen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrleidesen/WeAppTailWind/issues"
+  },
+  "homepage": "https://github.com/mrleidesen/WeAppTailWind#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.16"
+  }
+}
