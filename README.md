@@ -18,7 +18,7 @@ TailwindCSS For WeChatApp 原本提取代码来源于[TailwindCssForWechatMiniPr
 ## 精简
 
 - `tailwind.css`中精简了小程序中用不到的样式，删去了注释，保留其他全部内容（方便自己定制）
-- `tailwind.wxss`中精简了我个人使用中不常用的样式（渐变、带负数的样式），如需定制，可以在`tailwind.css`中修改，或者在`app.wxss`中自行添加定制化
+- `tailwind.wxss`中精简了我个人使用中不常用的样式（渐变、带负数的样式），如需定制，可以在`tailwind.config.js` 或者 `tailwind.wxss` 中修改，或者在 `app.wxss` 中自行添加定制化
   - 带负数的样式
   - 带小数点的样式
   - grid (因为我自己不常用，如果需要可自己配置～)
@@ -56,6 +56,6 @@ build 之后会在 `dist` 文件夹中得到一个根据 `tailwind.config.js` �
 
 如果需要完整的配置文件自己增删改，请运行命令行，运行前请删除 `tailwind.config.js` 文件
 ```shell
-npx tailwindcss init -full
+npx tailwindcss init --full
 ```
 
