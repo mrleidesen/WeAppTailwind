@@ -55,6 +55,8 @@ npm run build # or pnpm build
 
 build 之后会在 `dist` 文件夹中得到一个根据 `tailwind.config.js` 文件生成的完整 css ，但里面还是会有不需要的内容，可自行根据需要增删改和配置 `tailwind.config.js` 文件
 
+> 注意：里面会存在 \* 通配符，记得删掉，因为小程序不支持
+
 [参考文档官方文档](https://tailwindcss.com/docs/configuration)
 
 如果需要完整的配置文件自己增删改，请运行命令行，运行前请删除 `tailwind.config.js` 文件
@@ -62,3 +64,9 @@ build 之后会在 `dist` 文件夹中得到一个根据 `tailwind.config.js` �
 ```shell
 npx tailwindcss init --full
 ```
+
+### Usage
+
+在 `app.wxss` 中引入该 wxss 文件
+
+之后就可以使用了
