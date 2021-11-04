@@ -53,10 +53,8 @@ module.exports = {
       cover: "cover",
       contain: "contain",
     },
-    borderColor: (theme) => ({
-      ...theme("colors"),
-      DEFAULT: theme("colors.gray.200", "currentColor"),
-    }),
+    backgroundColor: (theme) => theme("colors"),
+    borderColor: (theme) => theme("colors"),
     borderOpacity: (theme) => theme("opacity"),
     borderRadius: {
       none: "0rpx",
@@ -306,4 +304,15 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  corePlugins: {
+    preflight: false,
+    space: false,
+    divideWidth: false,
+    divideColor: false,
+    divideOpacity: false,
+    divideStyle: false,
+    fontVariantNumeric: false,
+    resize: false,
+    mixBlendMode: false,
+  },
 };
