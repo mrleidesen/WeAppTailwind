@@ -14,6 +14,7 @@ TailwindCSS For WeChatApp 原本提取代码来源于[TailwindCssForWechatMiniPr
 2. `tailwind.wxss`是删减后的完整版，未压缩
 3. 因为使用中有很多用不到的代码，可根据自身需要进行删减
 4. 如果要新增样式，建议在`app.wxss`中进行修改
+5. 注意：小程序不支持 `*` ，请删除，不然会报错！
 
 ## 精简
 
@@ -23,7 +24,6 @@ TailwindCSS For WeChatApp 原本提取代码来源于[TailwindCssForWechatMiniPr
   - 带小数点的样式
   - grid (因为我自己不常用，如果需要可自己配置～)
   - 不常使用，定制化比较高的样式（比如 `transform`, `inset` 等）
-  
 - `tailwind.min.wxss`则是压缩成一行后的代码（尽力精简到**65KB**左右了）
 
 ### 根据小程序的 WXSS 修改的 TailwindCSS
@@ -36,16 +36,19 @@ TailwindCSS For WeChatApp 原本提取代码来源于[TailwindCssForWechatMiniPr
    1. 小数点： 比如 `1.5 => 1dot5`
    2. 斜杆： 比如 `1/2=> 1on2;`
 6. 已经将 `rem` 转换为 `rpx`
-   * `rem - px` 转换根据 `1rem = 16px` 进行换算
-   * `px - rpx` 转换根据 `1px = 2rpx` 进行换算
+   - `rem - px` 转换根据 `1rem = 16px` 进行换算
+   - `px - rpx` 转换根据 `1px = 2rpx` 进行换算
 
 ## 用法
+
 ### Install ⛑️
+
 ```shell
 npm install # or pnpm install
 ```
 
 ### Build 🔧
+
 ```shell
 npm run build # or pnpm build
 ```
@@ -55,7 +58,7 @@ build 之后会在 `dist` 文件夹中得到一个根据 `tailwind.config.js` �
 [参考文档官方文档](https://tailwindcss.com/docs/configuration)
 
 如果需要完整的配置文件自己增删改，请运行命令行，运行前请删除 `tailwind.config.js` 文件
+
 ```shell
 npx tailwindcss init --full
 ```
-
