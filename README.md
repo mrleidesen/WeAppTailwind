@@ -15,6 +15,7 @@ TailwindCSS For WeChatApp 原本提取代码来源于[TailwindCssForWechatMiniPr
 3. 因为使用中有很多用不到的代码，可根据自身需要进行删减
 4. 如果要新增样式，建议在`app.wxss`中进行修改
 5. 注意：小程序不支持 `*` ，请删除，不然会报错！
+   1. `2.2.0` 版本加入 minify ，自动删除 `*` 通配符并且压缩
 
 ## 精简
 
@@ -55,7 +56,9 @@ npm run build # or pnpm build
 
 build 之后会在 `dist` 文件夹中得到一个根据 `tailwind.config.js` 文件生成的完整 css ，但里面还是会有不需要的内容，可自行根据需要增删改和配置 `tailwind.config.js` 文件
 
-> 注意：里面会存在 \* 通配符，记得删掉，因为小程序不支持
+`dist` 文件夹中还有会有个 `tailwind.min.wxss` 是删除通配符后并且压缩后的文件，可直接在小程序中使用
+
+> 注意：tailwind.css 里面会存在 \* 通配符，记得删掉，因为小程序不支持
 
 [参考文档官方文档](https://tailwindcss.com/docs/configuration)
 
